@@ -21,4 +21,9 @@ bin/rails server
 ```
 * Abra seu navegador e vá para o endereço http://localhost:3000/.
 
-## Criação de Filmes
+## Página inicial
+A página inicial da aplicação web mostra o nome de todos os filmes armazenados no banco de dados. É possível ver as informações de cada filme acessando o link em seus nomes.
+
+Para adicionar um novo filme, basta clicar no link "Novo filme" que a página será redireciona à páginda de criação de filme.
+
+Para mais detalhes acesse: ```app/views/movies/index.html.erb```

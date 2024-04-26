@@ -1,12 +1,16 @@
+<!--Página inicial-->
 <h1> MyRottenPotatoes <h1>
 
 <h2> Filmes <h2>
 <ul>
+  <!--Pega cada filme do banco de dados e mostra seu nome-->
   <% @movies.each do |movie| %>
     <li>
+      <!--Link para as informações do filme-->
         <%= link_to movie.titulo, movie%>
     </li>
   <% end %>
 </ul>
 
+<!--Link para criação de novos filmes-->
 <%= link_to "Novo Filme", new_movie_path%>
