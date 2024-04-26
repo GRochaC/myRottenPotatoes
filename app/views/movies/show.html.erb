@@ -1,0 +1,14 @@
+<h1><%= @movie.titulo %></h1>
+
+<p><strong>Avaliação</strong>: <%= @movie.avaliacao%>/10.0</p>
+<p><strong>Classificação indicativa</strong>: <%= @movie.classificacao %></p>
+<p><strong>Estreia</strong>: <%= @movie.estreia %></p>
+<p><strong>Descrição</strong>: <%= @movie.descricao %></p>
+
+<ul>
+    <li> <%= link_to "Editar", edit_movie_path(@movie)%></li>
+    <li><%= link_to "Excluir", movie_path(@movie), data: {
+                                turbo_method: :delete,
+                                turbo_confirm: "Tem certeza?"
+                                }%> </li>
+</ul>

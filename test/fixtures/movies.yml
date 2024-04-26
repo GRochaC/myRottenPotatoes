@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  classificacao: 1
+  estreia: 2024-04-26
+  descricao: MyText
+
+two:
+  titulo: MyString
+  classificacao: 1
+  estreia: 2024-04-26
+  descricao: MyText

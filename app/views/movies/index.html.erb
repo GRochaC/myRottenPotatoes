@@ -1,0 +1,12 @@
+<h1> MyRottenPotatoes <h1>
+
+<h2> Filmes <h2>
+<ul>
+  <% @movies.each do |movie| %>
+    <li>
+        <%= link_to movie.titulo, movie%>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Novo Filme", new_movie_path%>

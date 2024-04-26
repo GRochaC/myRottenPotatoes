@@ -1,0 +1,45 @@
+<%= form_with model: movie do |form| %>
+  <div>
+    <%= form.label :titulo %><br>
+    <%= form.text_field :titulo %>
+    <% movie.errors.full_messages_for(:titulo).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :avaliacao %><br>
+    <%= form.text_field :avaliacao %>
+    <% movie.errors.full_messages_for(:avaliacao).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :classificacao %><br>
+    <%= select :movie, :classificacao, ["L","10","12","14","16","18"] %>
+    <% movie.errors.full_messages_for(:classificacao).each do |message|%>
+    <div><%= message%> </div>
+    <% end %>
+  </div>
+
+    <div>
+        <%= form.label :estreia%><br>
+        <%= form.text_area :estreia%>
+        <% movie.errors.full_messages_for(:estreia).each do |message|%>
+    <div><%= message%> </div>
+    <% end %>
+    </div>
+
+  <div>
+    <%= form.label :descricao %><br>
+    <%= form.text_area :descricao %><br>
+    <% movie.errors.full_messages_for(:descricao).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
