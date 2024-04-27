@@ -1,10 +1,12 @@
 <h1><%= @movie.titulo %></h1>
 
+<!--Informações do filme-->
 <p><strong>Avaliação</strong>: <%= @movie.avaliacao%>/10.0</p>
 <p><strong>Classificação indicativa</strong>: <%= @movie.classificacao %></p>
 <p><strong>Estreia</strong>: <%= @movie.estreia %></p>
 <p><strong>Descrição</strong>: <%= @movie.descricao %></p>
 
+<!--Links para editar/excluir-->
 <ul>
     <li> <%= link_to "Editar", edit_movie_path(@movie)%></li>
     <li><%= link_to "Excluir", movie_path(@movie), data: {

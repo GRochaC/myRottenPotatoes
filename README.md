@@ -21,9 +21,28 @@ bin/rails server
 ```
 * Abra seu navegador e vá para o endereço http://localhost:3000/.
 
-## Página inicial
+## O Projeto
+### Página inicial
 A página inicial da aplicação web mostra o nome de todos os filmes armazenados no banco de dados. É possível ver as informações de cada filme acessando o link em seus nomes.
 
-Para adicionar um novo filme, basta clicar no link "Novo filme" que a página será redireciona à páginda de criação de filme.
+Para adicionar um novo filme, basta clicar no link "Novo filme" que a página será redireciona à página de criação de filme.
 
-Para mais detalhes acesse: ```app/views/movies/index.html.erb```
+### Visualizando um Filme
+Ao clicar no nome de um filme, as seguintes informações são exibidas:
+* Título do filme;
+* Avaliação;
+* Classificação: Livre, 10 anos, 12 anos, 14 anos, 16 anos ou 18 anos;
+* Data de estreia;
+* Descrição.
+
+Na mesma página, embaixo das informações, o usuário pode Editar ou Excluir o filme em questão.
+
+### Criando e Editando Filmes
+Acessando via link de "Novo Filme" da página inicial ou editando um filme existente, o usuário deve preecher os campos dos atributos descritos acima, respeitando suas respectivas restrições.
+
+### Excluindo um Filme
+Ao clicar em Excluir na página de um filme, o browser levantará um pop-up para que o usuário confirme o procedimento. Após confirmar, o filme é removido do banco de dados.
+
+## Referências
+* https://guides.rubyonrails.org/getting_started.html
+* Armando Fox & David Patterson. Engineering Software as a Service: An Agile Approach Using Cloud Computing Second Edition, 2.0b7. 2021.
