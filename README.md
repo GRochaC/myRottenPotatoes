@@ -25,7 +25,7 @@ bin/rails server
 ### Página inicial
 A página inicial da aplicação web mostra o nome de todos os filmes armazenados no banco de dados. É possível ver as informações de cada filme acessando o link em seus nomes.
 
-Para adicionar um novo filme, basta clicar no link "Novo filme" que a página será redireciona à página de criação de filme.
+Para adicionar um novo filme, basta clicar no link "Novo filme" que a página será redirecionada à página de criação de filme.
 
 ### Visualizando um Filme
 Ao clicar no nome de um filme, as seguintes informações são exibidas:
