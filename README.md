@@ -30,10 +30,10 @@ Para adicionar um novo filme, basta clicar no link "Novo filme" que a página se
 ### Visualizando um Filme
 Ao clicar no nome de um filme, as seguintes informações são exibidas:
 * Título do filme;
-* Avaliação;
+* Avaliação: de 0.0 a 10.0;
 * Classificação: Livre, 10 anos, 12 anos, 14 anos, 16 anos ou 18 anos;
 * Data de estreia;
-* Descrição.
+* Descrição: máximo de 500 caractes e mínimo de 10.
 
 Na mesma página, embaixo das informações, o usuário pode Editar ou Excluir o filme em questão.
 
