@@ -9,6 +9,7 @@ myRottenPotatos é uma aplicação web simples que permite o usuário adicionar,
 ### Dependências
 * Ruby
 * SQLite3
+* Rails
 
 ### Executando o projeto
 * Entre na pasta:
